@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="m-2"><h4>household</h4></div>
+<div class="m-2"><a class="btn btn-light" href="{% url 'household_Individual_list' %}">Individual Listing</a></div>
+<div class="m-2"><a class="btn btn-light" href="{% url 'household_IndividualRoleInHousehold_list' %}">IndividualRoleInHousehold Listing</a></div>
+<div class="m-2"><a class="btn btn-light" href="{% url 'household_Household_list' %}">Household Listing</a></div>
+<div class="m-2"><a class="btn btn-light" href="{% url 'household_BankInfo_list' %}">BankInfo Listing</a></div>
+<div class="m-2"><h4>payment</h4></div>
+<div class="m-2"><a class="btn btn-light" href="{% url 'payment_Program_list' %}">Program Listing</a></div>
+<div class="m-2"><a class="btn btn-light" href="{% url 'payment_Payment_list' %}">Payment Listing</a></div>
+{% endblock %}
